@@ -1,6 +1,8 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="pl">
 <html>
 <head>
+  <meta charset="utf-8">
   <title>TO DO LISt</title>
   <meta name="description" content="website description" />
   <meta name="keywords" content="website keywords, website keywords" />
@@ -13,7 +15,7 @@
 <body>
   <div id="main">
  <!-- NAVIGATION -->
-    <header>  <span style="color:#FA057E;font-size:30px;font-family: 'Comfortaa'; text-decoration: underline;">todo &nbsp;&nbsp;&nbsp;</span> <i class="fas fa-clipboard-list fa-3x"></i>
+    <header>  <span style="color:#FA057E;font-size:25px;font-family: 'Comfortaa'; text-decoration: underline;">todo &nbsp;&nbsp;&nbsp;</span> <i class="fas fa-clipboard-list fa-2x"></i>
     </header>
     <nav>
       <a id="toTop"></a>
@@ -22,7 +24,9 @@
         <a href="#" class="fab fa-twitter"></a>
         <a href="#" class="fab fa-linkedin"></a>
       </div>
-      <div id="menu">??????</div>
+      <div id="menu"> 
+        <div id="log-out"><i class="fas fa-power-off"></i><span> Log out... </span></div>
+  </div>
     </nav>
     <div id="under_menu"> + ADD LIST </div>
     <!--BOXES FIELD-->
@@ -39,9 +43,8 @@
         </div>
         <hr> 
         <input type="text" id="myInput" placeholder="do zrobienia...">
-            <span onclick="newElement()" class="addBtn">Add</span>
+            <span onclick="newElement()" class="addBtn"><i class="fas fa-plus fa-2x"></i></span>
         <i class="fas fa-trash-alt fa-2x"></i>
-        <i class="fas fa-plus fa-2x"></i>
         <hr>
       </div>
       <!-- BOX "IN PROGRESS"-->
@@ -57,9 +60,8 @@
         </div>
         <hr> 
         <input type="text" id="inProgress" placeholder="w trakcie...">
-            <span onclick="newElementBox2()" class="addBtn">Add</span>
+            <span onclick="newElementBox2()" class="addBtn"><i class="fas fa-plus fa-2x"></i></span>
         <i class="fas fa-trash-alt fa-2x"></i>
-        <i class="fas fa-plus fa-2x"></i>
         <hr>
       </div>
       <!-- BOX "DONE"-->
@@ -73,18 +75,18 @@
         </div>
         <hr> 
         <input type="text" id="done" placeholder="zrobione!">
-            <span onclick="newElementBox3()" class="addBtn">Add</span>
+            <span onclick="newElementBox3()" class="addBtn"><i class="fas fa-plus fa-2x"></i></span>
         <i class="fas fa-trash-alt fa-2x"></i>
-        <i class="fas fa-plus fa-2x"></i>
         <hr>
       </div>
     </div>
     <hr>
     <!--FOOTER-->
   <div id="footer">
-      STOPKAAAAAAAAA
+      ||Monika, Wiktoria, Michał i Szymon for CodersCamp2019||
   </div>
 </div>
 <script src="dom.js"></script>
 </body>
 </html>
+
