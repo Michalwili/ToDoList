@@ -10,6 +10,7 @@
 
     <title>ToDoList</title>
     <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
 </head>
 
 <body>
@@ -25,19 +26,20 @@
                 <div class="middle">
                     <div id="login">
 
-                        <form action="javascript:void(0);" method="get">
+                        <form name="myform" action="javascript:void(0);" method="get">
 
                             <fieldset class="clearfix">
 
-                                <p><span class="fa fa-user"></span><input type="text" Placeholder="Username" required>
+                                <p><span class="fa fa-user"></span><input id="uname" type="text" Placeholder="Username"
+                                        required>
                                 </p>
                                 <!-- JS because of IE support; better: placeholder="Username" -->
-                                <p><span class="fa fa-lock"></span><input type="password" Placeholder="Password"
-                                        required></p>
+                                <p><span class="fa fa-lock"></span><input id="pass" type="password"
+                                        Placeholder="Password" required></p>
                                 <!-- JS because of IE support; better: placeholder="Password" -->
 
                                 <div>
-                                    <span style="width:30%; text-align:left;  display: inline-block;"><input
+                                    <span id="sub" style="width:30%; text-align:left;  display: inline-block;"><input
                                             type="submit" value="Sign In"></span>
 
                                     <span style="width:68%; text-align:right;  display: inline-block;"><a
