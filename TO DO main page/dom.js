@@ -119,5 +119,26 @@ function newElementBox2() {
       }
   } 
 
- 
 
+  // -------------- REMOVING LISTS ---------
+
+  function removeBox1() {
+  var box1 = document.getElementById("to_do_box");
+  console.log(box1);
+  box1.remove(); 
+  }
+  
+  function removeBox2() {
+    var box2 = document.getElementById("in_progress_box");
+    console.log(box2);
+    box2.remove(); 
+    }
+
+
+    function removeBox3() {
+      var box3 = document.getElementById("done_box");
+      console.log(box3);
+      box3.remove(); 
+      }
+
+// ------------ ADDING A WHOLE NEW LIST

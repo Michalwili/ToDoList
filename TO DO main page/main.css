@@ -189,7 +189,7 @@
 
   #log-out {
     text-align: right;
-    margin-right: 5px;
+    margin-right: 15px;
     color: white;
     margin-top: 5px;
   }
@@ -290,7 +290,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 2%;
-    margin-bottom: 4%;
+    margin-bottom: 1%;
   }
   
   .box {
@@ -327,9 +327,10 @@
     text-align: justify;
   }
   
-  /* #to_do_box {}
+  /* #to_do_box {} */
   
-  #in_progress_box {}
+  /*#in_progress_box {
+  }
   
   #done_box {} */
   
@@ -345,6 +346,7 @@
   }
   .fas.fa-trash-alt {
     color: rgb(36, 36, 34);
+    cursor: pointer;
   }
   .fas.fa-plus {
     color: #10e0e0;

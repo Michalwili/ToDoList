@@ -28,7 +28,7 @@
         <div id="log-out"><i class="fas fa-power-off"></i><span> Log out... </span></div>
   </div>
     </nav>
-    <div id="under_menu"> + ADD LIST </div>
+    <div id="under_menu"> YOUR TASKS... </div>
     <!--BOXES FIELD-->
     <hr> 
     <div id="boxes_field"> 
@@ -44,7 +44,7 @@
         <hr> 
         <input type="text" id="myInput" placeholder="do zrobienia...">
             <span onclick="newElement()" class="addBtn"><i class="fas fa-plus fa-2x"></i></span>
-        <i class="fas fa-trash-alt fa-2x"></i>
+            <i onclick="removeBox1()" class="fas fa-trash-alt fa-2x"></i>
         <hr>
       </div>
       <!-- BOX "IN PROGRESS"-->
@@ -61,7 +61,7 @@
         <hr> 
         <input type="text" id="inProgress" placeholder="w trakcie...">
             <span onclick="newElementBox2()" class="addBtn"><i class="fas fa-plus fa-2x"></i></span>
-        <i class="fas fa-trash-alt fa-2x"></i>
+            <i onclick="removeBox2()" class="fas fa-trash-alt fa-2x"></i>
         <hr>
       </div>
       <!-- BOX "DONE"-->
@@ -76,7 +76,7 @@
         <hr> 
         <input type="text" id="done" placeholder="zrobione!">
             <span onclick="newElementBox3()" class="addBtn"><i class="fas fa-plus fa-2x"></i></span>
-        <i class="fas fa-trash-alt fa-2x"></i>
+            <i onclick="removeBox3()" class="fas fa-trash-alt fa-2x"></i>
         <hr>
       </div>
     </div>
