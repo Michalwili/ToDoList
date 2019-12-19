@@ -124,21 +124,31 @@ function newElementBox2() {
 
   function removeBox1() {
   var box1 = document.getElementById("to_do_box");
-  console.log(box1);
-  box1.remove(); 
+  if (confirm('Are you sure you want to delete this list?')) {
+    box1.remove(); 
+} else {
+    return null;
+}
+  
   }
   
   function removeBox2() {
     var box2 = document.getElementById("in_progress_box");
-    console.log(box2);
-    box2.remove(); 
+    if (confirm('Are you sure you want to delete this list?')) {
+      box2.remove(); 
+  } else {
+      return null;
+  }
     }
 
 
     function removeBox3() {
       var box3 = document.getElementById("done_box");
-      console.log(box3);
-      box3.remove(); 
+      if (confirm('Are you sure you want to delete this list?')) {
+        box3.remove(); 
+    } else {
+        return null;
+    }
       }
 
-// ------------ ADDING A WHOLE NEW LIST
+
