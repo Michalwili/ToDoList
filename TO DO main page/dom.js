@@ -118,7 +118,36 @@ function newElementBox2() {
         console.log(list);
       }
   } 
-
+function newElementBox4() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("nextLi").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL4").appendChild(li);
+  }
+  document.getElementById("nextLi").value = "";
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function () {
+      var div = this.parentElement;
+      div.remove()
+    }
+  }
+  var list = document.querySelectorAll('#myUL4 > li');
+  for (let n = 0; n < list.length; n++) {
+    list[n].onclick = function () {
+      var div = this
+      div.classList.toggle("checked");
+    }
+  }
+}
 
   // -------------- REMOVING LISTS ---------
 
@@ -150,5 +179,37 @@ function newElementBox2() {
         return null;
     }
       }
+
+function removeBox4() {
+  var box4 = document.getElementById("nextList");
+  if (confirm('Are you sure you want to delete this list?')) {
+    box4.remove();
+  } else {
+    return null;
+  }
+
+}
+// -------------- Next List ---------
+
+let v = 0
+
+const btnNext = document.querySelector(".addList")
+const nextList = document.querySelector("#nextList")
+const nextBox = document.querySelector(".boxNext")
+
+
+btnNext.addEventListener("click", function () {
+  v++
+
+  const nextBox = document.querySelector(".boxNext" + v)
+  console.log(nextBox)
+  const x = nextList.innerHTML;
+  nextBox.innerHTML = x;
+  nextBox.classList.add('box');
+  nextBox.classList.add('nextList');
+  nextBox.setAttribute("id", "nextList");
+  nextBox.style.display = "block";
+
+})
 
 
