@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl">
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TO DO LISt</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="main.css" title="style" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400|Comfortaa|Sacramento|Shadows+Into+Light&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+</head>
+<body>
+  <div id="main">
+ <!-- NAVIGATION -->
+    <header>  <span style="color:#FA057E;font-size:25px;font-family: 'Comfortaa'; text-decoration: underline;">todo &nbsp;&nbsp;&nbsp;</span> <i class="fas fa-clipboard-list fa-2x"></i>
+    </header>
+    <nav>
+      <a id="toTop"></a>
+      <div id="socialIcons"> 
+        <a href="#" class="fab fa-facebook"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+      </div>
+      <div id="menu"> 
+        <div id="log-out"><i class="fas fa-power-off"></i><span> Log out... </span></div>
+  </div>
+    </nav>
+    <div id="under_menu"> 
+      <div><button class="addList">+ Add List </button></div>
+  </div>
+    <!--BOXES FIELD-->
+    <hr> 
+    <div id="boxes_field"> 
+      <!-- BOX "TO DO"-->
+      <div id="to_do_box" class="box">
+        <div class="title"><h3>To do!</h3></div>
+        <div class="content">
+            <hr>
+            <ul id="myUL">
+              <li>sample</li>
+            </ul>
+        </div>
+        <hr> 
+        <input type="text" id="myInput" placeholder="do zrobienia...">
+            <span onclick="newElement()" class="addBtn"><i class="fas fa-plus fa-2x"></i></span>
+            <i onclick="removeBox1()" class="fas fa-trash-alt fa-2x"></i>
+        <hr>
+      </div>
+      <!-- BOX "IN PROGRESS"-->
+      <div id="in_progress_box" class="box">
+        <div class="title"><h3>In progress...</h3></div>
+        <div class="content">
+            <hr>
+            <ul id="myUL2">
+            <li> new sample</li>
+            <li>new sample 2</li>
+            <li>new sample3</li>
+            </ul>
+        </div>
+        <hr> 
+        <input type="text" id="inProgress" placeholder="w trakcie...">
+            <span onclick="newElementBox2()" class="addBtn"><i class="fas fa-plus fa-2x"></i></span>
+            <i onclick="removeBox2()" class="fas fa-trash-alt fa-2x"></i>
+        <hr>
+      </div>
+      <!-- BOX "DONE"-->
+      <div id="done_box" class="box">
+        <div class="title"><h3>Done</h3></div>
+        <div class="content">
+            <hr>
+            <ul id="myUL3">
+            <li class="checked"> new sample</li>
+            </ul>
+        </div>
+        <hr> 
+        <input type="text" id="done" placeholder="zrobione!">
+            <span onclick="newElementBox3()" class="addBtn"><i class="fas fa-plus fa-2x"></i></span>
+            <i onclick="removeBox3()" class="fas fa-trash-alt fa-2x"></i>
+        <hr>
+      </div>
+      <div class="boxNext1 disappearance2"></div>
+      <div class="boxNext2 disappearance2"></div>
+      <div class="boxNext3 disappearance2"></div>
+      <div class="boxNext4 disappearance2"></div>
+      <div class="boxNext5 disappearance2"></div>
+      <div class="boxNext6 disappearance2"></div>
+      <div class="boxNext7 disappearance2"></div>
+      <div class="boxNext8 disappearance2"></div>
+      <div class="boxNext9 disappearance2"></div>
+      <div class="boxNext10 disappearance2"></div>
+      <div class="boxNext11 disappearance2"></div>
+      <!-- BOX "next"-->
+      <div id="nextList" class="box disappearance">
+        <div class="title">
+          <h3>New list</h3>
+        </div>
+        <div class="content">
+          <hr>
+          <ul id="myUL4">
+            <li>sample</li>
+          </ul>
+        </div>
+        <hr>
+        <input type="text" id="nextLi" placeholder="">
+        <span onclick="newElementBox4()" class="addBtn"><i class="fas fa-plus fa-2x"></i></span>
+        <i onclick="removeBox4()" class="fas fa-trash-alt fa-2x"></i>
+        <hr>
+      </div>
+    </div>
+    <hr>
+    
+    <!--FOOTER-->
+  <div id="footer">
+      ||Monika, Wiktoria, Michał i Szymon for CodersCamp2019||
+  </div>
+</div>
+<script src="dom.js"></script>
+</body>
+</html>
+
