@@ -1,71 +1,63 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/9b2aac655c.js" crossorigin="anonymous"></script>
-
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400|Comfortaa|Sacramento|Shadows+Into+Light&display=swap" rel="stylesheet">
     <title>ToDoList</title>
     <link rel="stylesheet" href="main.css">
     <script src="main.js"></script>
-</head>
-
-<body>
+  </head>
+  <body>
     <div class="main">
-        <div class="header">
-            <div class="logo">ToDoListApp</div>
-            <div class="login"><span class="fa fa-user"></span>LOG IN</div>
-        </div>
-        <div class="underline"></div>
-
-        <div class="container">
-            <center>
-                <div class="middle">
-                    <div id="login">
-
-                        <form name="myform" action="javascript:void(0);" method="get">
-
-                            <fieldset class="clearfix">
-
-                                <p><span class="fa fa-user"></span><input id="uname" type="text" Placeholder="Username"
-                                        required>
-                                </p>
-                                <!-- JS because of IE support; better: placeholder="Username" -->
-                                <p><span class="fa fa-lock"></span><input id="pass" type="password"
-                                        Placeholder="Password" required></p>
-                                <!-- JS because of IE support; better: placeholder="Password" -->
-
-                                <div>
-                                    <span id="sub" style="width:30%; text-align:left;  display: inline-block;"><input
-                                            type="submit" value="Sign In"></span>
-
-                                    <span style="width:68%; text-align:right;  display: inline-block;"><a
-                                            class="small-text" href="registration.html">Register new account</a></span>
-                                </div>
-
-                            </fieldset>
-                            <div class="clearfix"></div>
-                        </form>
-
-                        <div class="clearfix"></div>
-
-                    </div> <!-- end login -->
-                </div>
-            </center>
-        </div>
+      <div class="header">
+        <span style="color:#FA057E;font-size:25px;font-family: 'Comfortaa'; text-decoration: underline; text-align;">todo &nbsp;&nbsp;&nbsp;</span> <i class="fas fa-clipboard-list fa-2x"></i>
+        
+      </div>
+      <nav>
+    </div>
+      </nav>
+      <div class="container">
+        <center>
+          <div class="middle">
+            <div id="login">
+              <form name="myform" action="javascript:void(0);" method="get">
+                <fieldset class="clearfix">
+                  <p><span class="fa fa-user"></span><input id="uname" type="text" Placeholder="Username"
+                    required>
+                  </p>
+                  <!-- JS because of IE support; better: placeholder="Username" -->
+                  <p><span class="fa fa-lock"></span><input id="pass" type="password"
+                    Placeholder="Password" required></p>
+                  <!-- JS because of IE support; better: placeholder="Password" -->
+                  <div>
+                    <span id="sub" style="width:30%; text-align:left;  display: inline-block;"><input
+                      type="submit" value="Sign In"></span>
+                    <span style="width:68%; text-align:right;  display: inline-block;"><a
+                      class="small-text" href="registration.html">Register new account</a></span>
+                    </br> 
+                    </br> 
+                    <span style="width:100%; text-align:center;  display: inline-block;"><a
+                      class="small-text" href="./TO DO main page/index.html">Continue without registration</a></span>
+                  </div>
+                </fieldset>
+                <div class="clearfix"></div>
+              </form>
+              <div class="clearfix"></div>
+            </div>
+            <!-- end login -->
+          </div>
+        </center>
+      </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-</body>
-
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
